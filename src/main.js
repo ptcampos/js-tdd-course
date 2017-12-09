@@ -1,8 +1,10 @@
-const a = 10;
-const b = 5;
+const FizzBuzz = (number) => {
+  if (number === 0) return 0;
+  if (number % 3 === 0 && number % 5 === 0) return 'FizzBuzz';
+  if (number % 3 === 0) return 'Fizz';
+  if (number % 5 === 0) return 'Buzz';
 
-function sum() {
-  return a + b
-}
+  return number;
+};
 
-sum();
+export default FizzBuzz;
