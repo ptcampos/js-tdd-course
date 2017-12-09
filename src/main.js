@@ -1,8 +1,11 @@
-const a = 10;
-const b = 5;
+const sum = (num1, num2) => num1 + num2;
+const sub = (num1, num2) => num1 - num2;
+const mult = (num1, num2) => num1 * num2;
+const div = (num1, num2) => {
+  if (num2 === 0) {
+    return 'Não é possível divisão por zero';
+  }
+  return num1 / num2;
+};
 
-function sum() {
-  return a + b
-}
-
-sum();
+export { sum, sub, mult, div };
